@@ -1,0 +1,147 @@
+header {
+	background-color: #222;
+}
+
+body {
+	background-color: black;
+}
+
+h3 {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: green;
+}
+
+p {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.title {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size: 3em;
+	text-align: right;
+	color: green;
+	margin-right: 10px;
+}
+
+.title-desc {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-top: 10px;
+	text-align: right;
+	color: green;
+	margin-right: 10px;
+}
+
+.top-logo {
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.game-image {
+	max-width: 100%;
+	max-height: 240px;
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+	.title, .title-desc {
+		text-align: center;
+	}
+	
+	.top-logo {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.title {
+		font-size: 2.5em;
+	}
+
+	.title-desc {
+		font-size: 0.9em;
+	}	
+	
+	.top-logo {
+		margin-right: 25%;
+		max-width: 50%;
+		max-height: 50%;
+		margin-left: 25%;
+	}
+	
+	.featured-work-title {
+		font-size: 2em;
+		padding-left: 5px;
+	}
+	
+	.project-caption {
+		font-size: 2.7em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.central-image {
+		max-width: 80%;
+		max-height: 80%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 4px 25px 25px 4px;
+}
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
+}
